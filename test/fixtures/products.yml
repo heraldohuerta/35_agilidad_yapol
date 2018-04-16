@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  descripción: MyString
+  precio: 1
+  moneda: MyString
+  vendido: false
+  user: one
+
+two:
+  nombre: MyString
+  descripción: MyString
+  precio: 1
+  moneda: MyString
+  vendido: false
+  user: two

@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mis Products Vendidos</h1>
+
+
+
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Descripción</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Moneda</th>
+        <th scope="col">Vendido</th>
+        <th scope="col">User</th>
+        <th scope="col">Imagen</th>
+      </tr>
+    </thead>
+
+
+  <tbody>
+    <% @products.each do |product| %>
+      <tr>
+        <td><%= product.nombre %></td>
+        <td><%= product.descripción %></td>
+        <td><%= product.precio %></td>
+        <td><%= product.moneda %></td>
+        <td><%= product.vendido %></td>
+        <td><%= product.user.id %></td>
+        <td><%= image_tag product.photo %></td>
+      </tr>
+    <% end %>.
+  </tbody>
+</table>
+
+<br>
